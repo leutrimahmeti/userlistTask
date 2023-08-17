@@ -134,9 +134,10 @@ const UsersList = () => {
       />
     );
   };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const memoizedTableRows = useMemo(
     () => renderTableRows(),
-    [currentPage, filteredData, sortColumn, sortDirection, renderTableRows]
+    [currentPage, filteredData, sortColumn, sortDirection]
   );
 
   if (error) {
