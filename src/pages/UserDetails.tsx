@@ -3,7 +3,6 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { Post, User } from "../types/types";
-import { MdAddReaction } from "react-icons/md";
 import { LoadingSpinner } from "../components/common/LoadingSpinner";
 import PostItem from "../components/userdetails/PostItem";
 

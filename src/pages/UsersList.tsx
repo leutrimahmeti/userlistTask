@@ -136,7 +136,7 @@ const UsersList = () => {
   };
   const memoizedTableRows = useMemo(
     () => renderTableRows(),
-    [currentPage, filteredData, sortColumn, sortDirection]
+    [currentPage, filteredData, sortColumn, sortDirection, renderTableRows]
   );
 
   if (error) {
